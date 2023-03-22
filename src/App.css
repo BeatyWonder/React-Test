@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /*min-height: 100vh;*/
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+}
+
+.nav{
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    background-color: blueviolet;
+    position: relative;
+    min-width:auto;
+}
+
+.search{
+  display: flex;
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-items: center;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  position: absolute;
+  margin-left: 50%;
+  justify-content: center;
+}
+
+.search > img{
+  width: 20px;
+  display:block; 
+  position:absolute; 
+  top:4px; 
+  left:80px; 
+  cursor:pointer;
+}
+
+.contacts {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: whitesmoke;
+}
+
+.contact-card {
+  flex-basis: 225px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-bottom: 70px;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+  
+}
+
+.grid {
+  flex: auto;/* fills the remaining part of the viewport below header */
+  display: grid;
+  grid-template-columns: repeat(3, 100px);;
+  grid-gap: 2px;
+}
+
+.contact-card > img {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  height: auto;
+  position: absolute;
+  justify-self: center;
+  object-fit: cover;
+}
+h3{
+  display: block;
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  justify-items: center;
+  padding: .3em 100%;
+}
+
+.info-group {
+ display: flex;
+ position: absolute;
+ margin-top: 150px;
+ gap: 5px;
+ margin-left: 10px;
+ align-items: center;
+ justify-self: center;
+
+}
+
+.info-group > img {
+  height: 20px;
+  
+}
+.info-group > p {
+  margin-block: 2px;
+  font-size: 12px;
+  color: #2B283A;
+  word-wrap: break-word;
+  
+}
+
