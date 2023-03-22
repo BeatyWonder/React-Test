@@ -2,11 +2,11 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import {useDispatch, useSelector} from "react-redux"
 import { fetchUsers } from './userSlice'
-import newId from "../Users/id-card.png"
-import logo from "../Users/profile.png"
-import mail from "../Users/email.png"
-import jobo from "../Users/icons8-work.gif"
-import vector from "../Users/Vector.png"
+import newId from "../Users/Images/id-card.png"
+import logo from "../Users/Images/profile.png"
+import mail from "../Users/Images/email.png"
+import jobo from "../Users/Images/icons8-work.gif"
+import vector from "../Users/Images/Vector.png"
 
 export const UserView = () => {
   const [q, setQ] = useState("");
